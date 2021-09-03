@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+
+</head>
+<body>
+<h1>login page</h1>
+<form action="getdata">
+    <div class="center">
+
+    <input type="text" name="name1" placeholder="enter first name"><br><br>
+    <input type="text" name="name2" placeholder="enter the last name">
+    <br><br>
+    <input type="submit" class="btn" value="enter">
+    </div>
+</form>
+<h2>{{name1}} is my first name {{name2}} is my last name</h2>
+
+</body>
+</html>
